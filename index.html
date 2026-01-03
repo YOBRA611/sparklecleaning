@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--favicon-->
+    <link rel="icon" href="logo/Screenshot 2026-01-02 144748.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <title>Spackle Cleaning Agency</title>
+</head>
+<body>
+    <!--scrollbutton-->
+    <div id="progress">
+        <span id="progress-value">&#9651</span>
+    </div>
+    <!--top-footer-->
+    <section class="top-footer">
+        <div class="box">
+            <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text-1">
+                    <a href="contact.html">sparklecleanservices@gmail.com</a>
+                </div>
+            <div class="icon"><i class="fa fa-street-view" aria-hidden="true"></i></i></i></div>
+                    <div class="text-1">
+                        <p>Nairobi, Kenya</p>
+                    </div> 
+            <div class="social-link-list">
+                <a href="" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>           
+        </div>
+    </section>
+    <header>
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/254794522636?text=Hello%20Sparkle%20Cleaning%20Services!%20I'm%20interested%20in%20your%20services" 
+            class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat">
+        </a>
+
+        <div class="logo-wrapper">
+            <img src="logo/Screenshot_2026-01-02_144748-removebg-preview.png" class="logo">
+        </div>
+
+
+        <div class="menuToggle"></div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Services 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Residential Cleaning Services</a></li>
+                        <li><a href="#">Commercial / Office Cleaning</a></li>
+                        <li><a href="#">Specialized Cleaning Services</a></li>
+                        <li><a href="#">Post-Construction / Post-Renovation Cleaning</a></li>
+                        <li><a href="#">Event Cleaning Services</a></li>
+                        <li><a href="#">Eco-friendly / green cleaning</a></li>
+                        <li><a href="#">Supply of cleaning materials</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropbtn">Fumigation 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Bed bugs fumigation </a></li>
+                        <li><a href="#">Cockroach fumigation </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--heros section-->
+    <section id="home" class="hero">
+        <div class="slide active" style="background-image: url('Image/f7aebeeac60006a669303b641503eda0.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/b2e74e70299786a2761eb3e62bd292ff.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/693664823d4efe3330e35cba838f4f14.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/191363612a660dfc72447aed02b86036.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/734cf674972ff5d928f315e923029fb0.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/4b9e12b60eadf3c372df63c00c1f512d.jpg');"></div>
+        <div class="slide" style="background-image: url('Image/d3fb566fd8c99f42a31275ba33914579.jpg');"></div>
+
+        <div class="content">
+            <span class="caption1">Trusted Cleaning Services in Nairobi<br/>Quotes in Minutes!</span>
+            <span class="caption2">Reliable home, office & special cleaning eco-friendly, insured, professional. Call us Today</span>
+            <span class="caption3"><a href="#" class="button-Contact">Get A Free Quote</a></span>
+        </div>
+    </section>
+    <!-- ===== Quick Service Request Form ===== -->
+    <div class="quick-service-container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Quick Service Request</h2>
+    <p class="subtext">Get a callback in Minutes</p>
+    <form action="https://formspree.io/f/mlgdbpwa" method="POST" class="quick-service-form">
+        <input type="name" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone number" required>
+        <input type="hidden" name="_subject" value="New Quick Service Request">
+        
+        <!-- Dropdown for Services -->
+        <select required>
+        <option value="" disabled selected>Service(s)</option>
+        <option value="fumigation">Fumigation</option>
+        <option value="pest-control">Pest Control</option>
+        <option value="cleaning">Cleaning</option>
+        <option value="maintenance">Maintenance</option>
+        </select>
+
+        <button type="submit">SEND</button>
+    </form>
+    </div>
+    <section class="about-section">
+        <div class="container">
+            <div class="image-section" data-aos="fade-up" data-aos-delay="200">
+                <img src="Image/05ba2cd2926871777aa5aff62722fcce.jpg">
+            </div>
+            <div class="content-section">
+                <div class="top">
+                    <h3 data-aos="fade-up" data-aos-delay="300">Keeping Spaces Spotless, So You Don’t Have To</h3>
+                        <p class="about-text" data-aos="fade-up" data-aos-delay="400">At Sparkle Cleaning Agency, we believe a clean environment is more than just aesthetics it’s about comfort, health, and productivity. Whether it’s your home, office, or commercial space, we are committed to delivering cleaning solutions that make your life easier and your space healthier.
+                        Our team is made up of trained, dependable professionals who understand the value of consistency and attention to detail. We use eco-friendly, safe, and effective products, ensuring that your space is not only clean but also safe for your family, employees, and clients.
+                        We take pride in our personalized approach, tailoring every cleaning session to meet the unique needs of your space. From the smallest corner to the largest area, we make sure every surface is spotless, every room is fresh, and every detail is handled with care.
+                        <br/>With Sparkle Cleaning Agency, you’re not just hiring a cleaning service you’re gaining a trusted partner who takes responsibility for your environment. Our mission is to provide spaces that are inviting, organized, and ready for anything, so you can focus on what matters most.
+                        Experience the difference of a truly clean space. Your comfort, your safety, and your peace of mind are at the heart of everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHY US SECTION -->
+    <section id="why-us" class="why-us-section">
+        <h2 data-aos="fade-up" data-aos-delay="80">What Makes Us Different</h2>
+
+        <div class="why-us-grid">
+            <div class="why-box" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h3>Reliable & Trained Staff</h3>
+            <p>Our team is professional, experienced, and trustworthy, ensuring every clean is perfect.</p>
+            </div>
+
+            <div class="why-box" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-seedling"></i>
+            <h3>Eco-Friendly Cleaning Products</h3>
+            <p>Safe for your family, employees, and the environment.</p>
+            </div>
+
+            <div class="why-box" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Integrity</h3>
+            <p>Transparent and honest dealings with all our Clients and partners.</p>
+            </div>
+
+            <div class="why-box" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-regular fa-clock"></i>
+            <h3>Flexible Schedules</h3>
+            <p>We work around your availability daily, weekly, or one-time deep cleans.</p>
+            </div>
+
+            <div class="why-box" data-aos="fade-up" data-aos-delay="500">
+            <i class="fa-regular fa-building"></i>
+            <h3>Residential & Commercial</h3>
+            <p>We handle everything from apartments and homes to offices and commercial spaces.</p>
+            </div>
+        </div>
+    </section>
+    <!--service-->
+    <section class="resides">
+        <div class="service-title" data-aos="fade-up" data-aos-delay="100">
+            <h2>Our Cleaning Services</h2>
+                <p class="pl-text" data-aos="fade-up" data-aos-delay="200">Over the years, Sparkle Cleaning Services has built a strong reputation for dependable, professional cleaning services, 
+                    earning the trust of homes and businesses through consistent quality and attention to detail.
+                </p>
+        </div>
+        <div class="box-container">
+            <a href="#" data-aos="fade-up" data-aos-delay="300">
+                <div class="box-content">
+                    <h3>Residential Cleaning <br/>Services</h3>
+                    <p>We help keep your home fresh, clean, and comfortable. Our residential cleaning solutions 
+                        are designed to give you a spotless living space while saving you time and effort. Whether 
+                        it’s regular upkeep or a deep clean, we ensure every room feels welcoming and hygienic.
+                    </p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+            <a href="#" data-aos="fade-up" data-aos-delay="400">
+                <div class="box-content">
+                    <h3> Commercial / Office <br/>Cleaning</h3>
+                    <p>A clean workspace creates a positive impression and supports productivity. <br/>We provide 
+                        reliable cleaning services for offices, shops, and commercial spaces, 
+                        ensuring a professional and healthy environment for employees and visitors alike.
+                    </p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+            <a href="#" data-aos="fade-up" data-aos-delay="500">
+                <div class="box-content">
+                    <h3>Specialized Cleaning <br/>Services</h3>
+                    <p>Some spaces require extra attention. <br/>Our specialized cleaning services focus on detailed 
+                        and targeted cleaning needs,<br/>
+                        handled with care, precision, and the right equipment to achieve exceptional results.
+                    </p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+            <a href="#" data-aos="fade-up" data-aos-delay="600">
+                <div class="box-content">
+                    <h3>Post-Construction / Post-Renovation <br/>Cleaning</h3>
+                    <p>After construction or renovation, dust and debris can overwhelm your space. 
+                        We provide thorough post-construction cleaning to remove dirt, 
+                        residue, and waste, leaving your property clean, safe, and ready for use.
+                    </p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+            <a href="#" data-aos="fade-up" data-aos-delay="700">
+                <div class="box-content">
+                    <h3> Event Cleaning <br/>Services</h3>
+                    <p>Hosting an event can be stressful cleaning shouldn’t be. We offer 
+                        pre-event and post-event cleaning services to ensure your venue is spotless 
+                        before guests arrive and perfectly cleaned once the event is over. No matter the size or type of space, we are committed to 
+                        delivering reliable, high-quality cleaning services you can trust.
+                    </p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+            <a href="#" data-aos="fade-up" data-aos-delay="800">
+                <div class="box-content">
+                    <h3>Fumigation <br/>Services</h3>
+                    <p>We provide professional fumigation solutions to help protect your home 
+                        or business from pests. Our approach is safe, effective,
+                        and designed to create a healthier, pest-free environment. No matter the size or 
+                        type of space, we are committed 
+                        to delivering reliable, high-quality cleaning services you can trust.</p>
+                    <p class="read">Read More...</p>
+                </div>
+            </a>
+        </div>
+    </section>  
+    <!--projects-->
+    <section class="cleaning">
+        <h2 data-aos="fade-up" data-aos-delay="100">Our Work</h2>
+        <div class="projects-grid container">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="Image/44dace120c3b6f5d67aaebafc6087574.jpg" alt="Project 1">
+                <h3>Sofa cleaning</h3>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="Image/24f5d2414de7655d56b45e1f521ae4ba.jpg" alt="Project 2">
+                <h3>Sink cleaning</h3>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="Image/28845b8a1ec3d1626e65c0e079155ec1.jpg" alt="Project 3">
+                <h3>Sofa cleaning</h3>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="Image/f31916dfe8d5631a354e6aca6490b8e8.jpg" alt="Project 4">
+                <h3>Kitchen cleaning</h3>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="Image/a0e009ecbb4bba07195762e45f053529.jpg" alt="Project 5">
+                <h3>Home garden cleaning</h3>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="Image/bbfc03e8a42afc8e3f8adb0abd074ad8.jpg" alt="Project 5">
+                <h3>Sofa cleaning</h3>
+            </div>
+        </div>
+        <div class="more-work" data-aos="fade-up" data-aos-delay="600">
+            <a href="#">See more in Our Portfolio</a>
+        </div>
+    </section>
+    <!--our impact-->
+    <section class="impact-section">
+        <div class="impact-image" data-aos="fade-up" data-aos-delay="100">
+            <img src="Image/7fa38958bbdce90a323057b03a994382.jpg">
+        </div>
+        <div class="impact-content">
+            <h2 data-aos="fade-up" data-aos-delay="200">Our Impact in Numbers</h2>
+            <p data-aos="fade-up" data-aos-delay="300">Over the years, sparkle cleaning services has grown through dedication, reliability, and a commitment to 
+                maintaining clean, safe, and welcoming spaces for our clients.</p>
+            <div class="stats">
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-users"></i>
+                    <h3 class="counter" data-target="500">0</h3>
+                    <p>Clients</p>
+                </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-diagram-project"></i>
+                    <h3 class="counter" data-target="550">0</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-box" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3 class="counter" data-target="10">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial-->
+    <section class="slideshow-container">
+        <h1 class="core-heading" data-aos="fade-up" data-aos-delay="100">Client's Say</h1>
+        <div class="mySlides" data-aos="fade-up" data-aos-delay="200">
+           <p>"We’ve been using Sparkle Cleaning Servives for our office cleaning, and the difference is remarkable. The team is professional, reliable, and always leaves the space spotless. Highly recommended."
+           </p>
+
+           <div class="detail">
+                <span class="name">— Kibet E.,</span>
+                <span class="job">Office manager</span>
+                <span class="org">Commercial Client</span>
+           </div>
+        </div>
+
+         <div class="mySlides" data-aos="fade-up" data-aos-delay="200">
+           <p>
+            "Their attention to detail is impressive. Our home feels fresh and welcoming after every visit. The staff is friendly, punctual, and very thorough."
+           </p>
+
+           <div class="detail">
+                <span class="name">— Kimani,</span>
+                <span class="job">Residential Client</span>
+           </div>
+        </div>
+
+         <div class="mySlides" data-aos="fade-up" data-aos-delay="200">
+           <p>
+            "Sparkle Cleaning Servives has been consistent and dependable. They understand our cleaning needs and deliver quality work every time. We truly trust their services."
+           </p>
+
+           <div class="detail">
+                <span class="job">Business Owner</span>
+           </div>
+        </div>
+
+
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+    <!-- Dots/bullets/indicators -->
+    <div class="dot-container" data-aos="fade-up" data-aos-delay="200">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--contact section-->
+    <section class="contact-section" id="Contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="open-text">Get in touch with us for more information or any inquiries about our cleaning and maintenance services. 
+            <br/>Sparkle Cleaning Service is committed to delivering professional, reliable, and high-quality cleaning solutions for homes and businesses.</p>
+        <div class="contract">
+            <div class="Contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-street-view" aria-hidden="true"></i></i></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Nairobi, Kenya<br/>00100</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+254(0)794 522636</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>sparklecleanservices@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Contactform">
+                <form action="https://formspree.io/f/mlgdbpwa" method="POST">
+                    <h2>Send Message</h2>
+                    
+
+                    <div class="inputbox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Phone" required="required">
+                        <span>Phone</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="Message" required="required" ></textarea>
+                        <span>Type your Message....</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        </section>
+        <!--footer section-->
+        <footer>
+        <div class="footer-col">
+            <h2>About us</h2>
+            <p>At Sparkle Cleaning Agency, we believe a clean environment is more than just aesthetics 
+                it’s about comfort, health, and productivity. Whether it’s your home, office, or commercial 
+                space, we are committed 
+                to delivering cleaning solutions that make your life easier and your space healthier.</p>
+        </div>
+        <div class="footer-col">
+            <h2>Quick Links</h2>
+            <ul class="list">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h2>Contact Us</h2>
+            <p>Email: sparklecleanservices@gmail.com</p>
+            <p>Phone: +254(0)794 522636</p>
+            <p>Address: Nairobi, Kenya</p>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy;2026 Sparkle clean services . All rights reserved</p>
+        </div>
+        </footer>
+        <!--crafted-->
+        <section class="bottom-footer">
+            <div class="craft">
+                <p>Crafted @  <a href="https://wa.me/254700073919?text=Hello%20I%20am%20interested%20in%20your%20services"> bravitech</a></p>
+            </div>
+        </section>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1500, once: true });
+
+    const menuToggle = document.querySelector('.menuToggle');
+    const header = document.querySelector('header');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // Mobile menu toggle
+    menuToggle.addEventListener('click', e => {
+        e.stopPropagation();
+        header.classList.toggle('active');
+    });
+
+    // Mobile dropdown toggle
+    dropdowns.forEach(dropdown => {
+        const btn = dropdown.querySelector('.dropbtn');
+        const content = dropdown.querySelector('.dropdown-content');
+
+        btn.addEventListener('click', e => {
+            // Only mobile (<=900px)
+            if (window.innerWidth > 900) return;
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Close other dropdowns
+            dropdowns.forEach(d => {
+                if (d !== dropdown) d.classList.remove('active');
+            });
+
+            // Toggle this dropdown
+            dropdown.classList.toggle('active');
+        });
+    });
+
+    // Close dropdowns & mobile menu when clicking outside
+    document.addEventListener('click', e => {
+        if (window.innerWidth <= 900) {
+            dropdowns.forEach(d => d.classList.remove('active'));
+            header.classList.remove('active');
+        }
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 900) {
+                dropdowns.forEach(d => d.classList.remove('active'));
+                header.classList.remove('active');
+            }
+        });
+    });
+
+    // Reset on resize
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) {
+            dropdowns.forEach(d => d.classList.remove('active'));
+            header.classList.remove('active');
+        }
+    });
+
+
+
+    let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100)/calcHeight);
+            if (pos > 100) {
+                scrollProgress.style.display = "grid";
+            } else {
+                scrollProgress.style.display = "none";
+            }
+            scrollProgress.addEventListener("click", () => {
+                document.documentElement.scrollTop = 0;
+            });
+            scrollProgress.style.background = `conic-gradient(#1F3A5F ${scrollValue}%, white ${scrollValue}%)`;
+        };
+
+        window.onscroll = calcScrollValue;
+        window.onload = calcScrollValue;
+
+     const slides=document.querySelectorAll('.slide');
+        let current=0;
+        function nextSlide(){
+        slides[current].classList.remove('active');
+        current=(current+1)%slides.length;
+        slides[current].classList.add('active');
+    }
+    setInterval(nextSlide,5000);
+
+    // Counter animation
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+        const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+    // speed factor (lower = slower)
+        const speed = 50; 
+
+            if (count < target) {
+                counter.innerText = count + 1;
+                setTimeout(updateCount, speed);
+            } else {
+                counter.innerText = target + "+";
+            }
+            };
+
+            updateCount();
+        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+  </script>
+</body>
+</html>
